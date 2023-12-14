@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largura e Altura</title>
+    <style>
+        #direta {
+            background: lightblue;
+            width: 210px;
+            height: 40px;
+            margin-top: -8px;
+        }
+
+        #auto{
+            background: blueviolet;
+            width: auto;
+            height: auto;
+        }
+
+        #initial{
+            background: lightcoral;
+            width: initial;
+            height: initial;
+        }
+        #div-01{
+            background: lightblue;
+            width: 250px;
+            height: 100px;
+
+        }
+
+        #div-02{
+            background: lightgreen;
+            width: inherit;
+            height: inherit;
+        }
+
+        .medidas-min-max{
+            min-width: 100px;
+            max-width: 350px;
+            min-height: 20px;
+            max-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <p id="direta">Largura e Altura definida diretamente</p><br>
+    <br><button id="auto">Initial para aplicar valor automático de acordo com o tamanho do elemento</button>
+    <br id="initial"><p>Aplicar uma espécie de valor padrão</p>
+    <div id="div-01">
+        DIV principal
+        <div id="div-02">
+            Usando INHERIT na DIV secundária
+        </div>
+    </div><br>
+    <br><button class="medidas-min-max">
+        Largura e Altura Mínima e Máxima Largura e Altura Mínima e Máxima
+        Largura e Altura Mínima e Máxima
+        Largura e Altura Mínima e Máxima
+        Largura e Altura Mínima e Máxima
+        Largura e Altura Mínima e Máxima
+        Largura e Altura Mínima e Máxima
+        Largura e Altura Mínima e Máxima
+        Largura e Altura Mínima e Máxima
+        Largura e Altura Mínima e Máxima
+    </button>
+</body>
+</html>

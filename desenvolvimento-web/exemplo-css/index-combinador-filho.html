@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinador Filho</title>
+    <style>
+        div p{
+            background: lightgreen;
+        }
+        div > p{
+            color: red
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Parágrafo 1 - Dentro da DIV</p>
+        <p> Parágrafo 2 - Dentro da DV</p>
+        <span>
+            <p>Parágrafo 3 - Dentro da DIV e do SPAN</p>
+        </span>
+    </div>
+    <p>Parágrafo 4 - Fora da DIV</p>
+    <p>Parágrafo 5 - Fora da DIV</p>
+</body>
+</html>

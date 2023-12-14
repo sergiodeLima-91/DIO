@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinador Filho</title>
+    <style>
+        /* Combinador Irmão Adjacente:*/
+        div + p{
+            color: tomato
+        }
+        /* Combinador Irmão Adjacente com Classes:*/
+        .fundo-verde + p{
+            color: blueviolet;
+        }
+        /* Combinador Irmão em Geral:*/
+        div ~ p{
+            background: darkgoldenrod;
+        }
+        /* Combinador Irmão em Geral com CLasse:*/
+        .fundo-verde ~ p{
+            font-weight: bold;
+        }
+        /* Combinador Irmão Adjacente e em Geral com vários seletores:*/
+        .fundo-amarelo + p{
+            color: cadetblue;
+        }
+
+        .fundo-amarelo ~ p{
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="fundo-verde">
+        <p>Parágrafo 1 - Dentro da DIV</p>
+        <p> Parágrafo 2 - Dentro da DV</p>
+        <span>
+            <p>Parágrafo 3 - Dentro da DIV e do SPAN</p>
+        </span>
+    </div>
+    <p>Parágrafo 4 - Fora da DIV</p>
+    <p>Parágrafo 5 - Fora da DIV</p>
+    <div class="fundo-azul">
+        <p>Parágrafo 6 - Dentro da DIV</p>
+        <p> Parágrafo 7 - Dentro da DV</p>
+        <span>
+            <p>Parágrafo 8 - Dentro da DIV e do SPAN</p>
+        </span>
+    </div>
+    <p>Parágrafo 9 - Fora da DIV</p>
+    <p>Parágrafo 10 - Fora da DIV</p>
+    <div class="fundo-amarelo">
+        <p>Parágrafo 11 - Dentro da DIV</p>
+        <p> Parágrafo 12 - Dentro da DV</p>
+        <span>
+            <p>Parágrafo 13 - Dentro da DIV e do SPAN</p>
+        </span>
+    </div>
+    <p>Parágrafo 14 - Fora da DIV</p>
+    <p>Parágrafo 15 - Fora da DIV</p>
+</body>
+</html>

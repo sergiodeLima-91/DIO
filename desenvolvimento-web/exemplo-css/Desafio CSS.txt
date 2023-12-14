@@ -1,0 +1,148 @@
+Código HTML:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trilha de CSS - DIO</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="banner">
+    <div class="banner-content">
+      <div class="logo">
+        <img src="assets/images/logo.png" title="Logotipo Trilha de CSS DIO" alt="Logotipo Trilha de CSS DIO">
+      </div>
+      <h1 id="titulo-01">Trilha de CSS da DIO</h1>
+      <p id="acesse-ja">A nova Trilha de CSS da DIO está disponível. Acesse já e aprenda do zero como desenvolver sites profissionais.</p>
+      <button>Quero me inscrever</button>
+    </div>
+  </header>
+  <main>
+    <section id="course-content">
+      <h2>O que vou aprender?</h2>
+      <p id="resposta">
+        Temos 3 módulos recheados de conteúdos do básico ao avançado para que você aprenda a 
+        desenvolver sites profissionais utilizando somente HTML e CSS: sem nenhuma biblioteca ou framework a mais.
+      </p>
+      <div class="modules-list">
+        <div class="module">
+          <span>Módulo 01:</span> primeiros passos com CSS
+        </div>
+        <div class="module">
+          <span>Módulo 02:</span> trabalhando com layouts no CSS
+        </div>
+        <div class="module">
+          <span>Módulo 03:</span> refinando os estilos CSS das nossas páginas
+        </div>
+      </div>
+    </section>
+    <section id="transform-world">
+      <p id="transforme-texto">TRANSFORME O MUNDO COM A GENTE</p>
+    </section>
+    <section id="professional-challenges">
+      <h2>Evolua e encare novos desafios profissionais</h2>
+      <img src="assets/images/professional-challenges.png" title="Homem lendo depoimentos em um tablet" alt="Homem lendo depoimentos em um tablet">
+    <p id="togheter">
+        Junte-se ao nosso ecossistema e transforme o mundo com a gente! Todos os dias dezenas de empresas 
+        acessam a nossa plataforma em busca dos talentos mais criativos, dinâmicos e colaborativos, 
+        além do conhecimento técnico. 
+        A nossa missão é te preparar para que você conecte-se com as melhores oportunidades.
+    </p>
+    </section>
+  </main>
+  <footer>
+    <img class="dio-logo" src="assets/images/dio-logo.png" title="Logotipo DIO com o texto make the change" alt="Logotipo DIO com o texto make the change">
+    <p>Acesse <a href="https://dio.me">dio.me</a> e se cadastre agora</p>
+  </footer>
+</body>
+</html>
+
+-----------------------------------------------------
+Estilização CSS
+
+.banner{
+    width: 1340px;
+    height: 500px;
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+    margin-left: -20px;
+    margin-right: -30px;
+    border-color: rgb(26, 84, 110);
+    background: url('../images/banner.png'), rgb(13, 36, 47);
+    margin-top: -15px;
+    margin-left: -20px;
+    background-size: contain;
+}
+
+
+
+#acesse-ja{
+    width: 500px;
+    margin-left: 415px;
+    font-size: 20px;
+}
+
+#titulo-01{
+    text-transform: uppercase;
+    margin-left: 470px;
+    margin-bottom: -10px;
+}
+
+.logo{
+    margin-left: 555px;
+    image-orientation:;
+}
+
+#transform-world{
+    background-image: url(../images/woman-code.png);
+    background-size: 1800px;
+    background-position: center;
+    width: 1355px;
+    height: 580px;
+    margin-left: -20px;
+    background-repeat: no-repeat;
+}
+
+#transforme-texto{
+    text-transform: lowercase;
+    font-size: 35px;
+    width: 170px;
+    height: 90px;
+    word-break: normal;
+    margin-left: 200px;
+}
+
+button{
+    margin-left: 605px;
+    margin-bottom: 10px;
+}
+
+h2{
+    text-transform: uppercase;
+    color: rgb(51, 168, 219);
+    text-align: center;
+}
+
+#resposta{
+    text-align: center;
+}
+
+.module{
+    text-align: center;
+}
+
+#togheter{
+    text-transform: none;
+}
+
+#professional-challenges{
+    text-align: center;
+    width: 500px;
+    margin-top: 90px;
+    margin-left: 400px;
+    text-transform: uppercase;
+    word-wrap: break-word;
+}

@@ -1,0 +1,25 @@
+{
+  "name": "npm-install",
+  "version": "1.0.0",
+  "description": "pacote de funcoes utilidades",
+  "main": "funcao-escreva-meu-nome.js",
+  "scripts": {
+    "test": "console.log(funcao-escreva-meu-nome)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergiodeLima-91/desenvolvimento-web.git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "Sérgio Lima",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/sergiodeLima-91/desenvolvimento-web/issues"
+  },
+  "homepage": "https://github.com/sergiodeLima-91/desenvolvimento-web#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}

@@ -1,0 +1,10 @@
+div#q2{
+    background-image: linear-gradient(to top, rgb(2, 2, 69), red);
+    background-size: contain;
+}
+
+div#q3{
+    background-image: url('../azazel.gif');
+    background-size: cover;
+}
+

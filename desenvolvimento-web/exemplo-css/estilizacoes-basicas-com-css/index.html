@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilizações Básicas com CSS</title>
+    <style>
+        div.quadrado-01{
+            display: inline-block; /*Para que os quadrados fiquem na horizontal*/
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: lightgray;
+            width: 200px;
+            height: 200px;
+        }
+
+        div.quadrado-02{
+            display: inline-block; /*Para que os quadrados fiquem na horizontal*/
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: lightgray;
+            width: 200px;
+            height: 200px;
+        }
+
+        div.quadrado-03{
+            display: inline-block; /*Para que os quadrados fiquem na horizontal*/
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: lightgray;
+            width: 200px;
+            height: 200px;
+        }
+
+        div.quadrado-04{
+            display: inline-block; /*Para que os quadrados fiquem na horizontal*/
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: lightgray;
+            width: 200px;
+            height: 200px;
+        }
+        /*Redimensionamento de Bakcgrounds*/
+        div#q1{
+            background-image: linear-gradient(to right, blue, violet);
+        }
+
+        div#q2{
+            background-image: url(./azazel.gif);
+            background-size: contain;
+        }
+
+        div#q3{
+            background-color: aqua;
+        }
+
+        /*Repetição de Bakcgrounds*/
+
+        div#q4{
+            background-image: url(./azazel.gif);
+            background-size: 50% 30%;
+            background-repeat: no-repeat;
+        }
+
+        div#q5{
+            background-image: url(./azazel.gif);
+            background-size: 50% 30%;
+            background-repeat: repeat-x;
+        }
+
+        div#q6{
+            background-image: url(./azazel.gif);
+            background-size: 50% 30%;
+            background-repeat: repeat-y;
+        }
+
+        div#q7{
+            background-image: url(./azazel.gif);
+            background-size: 50% 30%;
+            background-repeat: space;
+        }
+
+        div#q8{
+            background-image: url(./azazel.gif);
+            background-size: 50% 30%;
+            background-repeat: round;
+        }
+
+        div#q9{
+            background-image: url(./azazel.gif);   
+            background-position: -100px -100px;
+        }
+
+        div#q10{
+            background-image: url(./azazel.gif);
+            background-repeat: no-repeat;
+            background-position: right;
+        }
+
+        div#q11{
+            background-image: url(./azazel.gif);
+            background-repeat: no-repeat;
+            background-position: left;
+        }
+
+        div#q12{
+            background-image: url(./azazel.gif);
+            background-repeat: no-repeat;
+            background-position: bottom;
+        }
+
+        div#q13{
+            background-image: url(./azazel.gif);
+            background-repeat: no-repeat;
+            background-position: top;
+        }
+
+        div#q14{
+            background-image: url(./CIdade\ 2.jpg);
+            background-size: contain;
+            background-attachment: fixed;
+        }
+
+        div#q15{
+            background-image: url(./CIdade\ 2.jpg);
+            background-size: contain;
+            background-attachment: scroll;
+        }
+
+        div#q16{
+            background-image: url(./CIdade\ 2.jpg);
+            background-size: contain;
+            background-attachment: local;
+        }
+    
+    </style>
+    </head>
+<body>
+    <h1>Redimensionando Backgrounds</h1>
+    <div class="quadrado-01" id="q1"></div>
+    <div class="quadrado-01" id="q2"></div>
+    <div class="quadrado-01" id="q3"></div>
+
+    <h1>Repetição de Backgrounds</h1>
+    <div class="quadrado-02" id="q4"></div>
+    <div class="quadrado-02" id="q5"></div>
+    <div class="quadrado-02" id="q6"></div>
+    <div class="quadrado-02" id="q7"></div>
+    <div class="quadrado-02" id="q8"></div>    
+
+    <h1>Posicionamento do Background</h1>
+    <div class="quadrado-03" id="q9"></div>
+    <div class="quadrado-03" id="q10"></div>
+    <div class="quadrado-03" id="q11"></div>
+    <div class="quadrado-03" id="q12"></div>
+    <div class="quadrado-03" id="q13"></div>
+
+    <h1>Movimentação do BG em Relação ao Browser</h1>
+    <div class="quadrado-04" id="q14">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, sit? Deserunt sunt deleniti ad reiciendis corrupti doloribus officiis eveniet tempore quibusdam laboriosam molestias perspiciatis sequi sint excepturi, asperiores, incidunt sapiente?</p>
+    </div>
+    <div class="quadrado-04" id="q15">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae laboriosam consequuntur corrupti, aut libero eius inventore fuga enim voluptate quam nihil, atque nisi voluptates hic pariatur cumque corporis voluptas quo? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae laboriosam consequuntur corrupti, aut libero eius inventore fuga enim voluptate quam nihil, atque nisi voluptates hic pariatur cumque corporis voluptas quo?</p>
+    </div>
+    <div class="quadrado-04" id="q16">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est totam, alias asperiores in iste non eligendi quae laborum ullam, illum hic dicta deleniti placeat! Autem illo nobis molestiae enim dignissimos?</p>
+    </div>
+ 
+</body>
+</html>
