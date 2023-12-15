@@ -94,3 +94,63 @@ Pseudo elementos simulam DIVs antes (before) ou depois (after) de outros element
     display: flex;
     margin-top: 40px;
 }
+
+.piano-keys .key {
+    cursor: pointer;
+    /* Para não permitir que o elemento seja selecionado. Isso é coisa de texto! */
+    user-select: none;
+    /* Para retirar as bolinhas que pontuam os elementos da lista */
+    list-style: none;
+    color: #a2a2a2;
+    position: relative;
+    text-transform: uppercase;
+}
+
+/* Estilização Específica das Teclas Brancas */
+.piano-keys .white {
+    /* Largura e Altura */
+    width: 70px;
+    height: 230px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background: linear-gradient(#fff 96%, #eee 4%);
+}
+
+/* Estilização Específica das Teclas Pretas */
+.piano-keys .black {
+    /* Largura e Altura */
+    width: 44px;
+    height: 140px;
+    /* Colocando as teclas pretas encima das brancas */
+    z-index: 2;
+    margin: 0 -22px 0 -22px;
+    border: 1px solid black;
+    /* Alterando as bordas superiores */
+    border-radius: 0 0 5px 5px;
+    background: linear-gradient(#333, #000);
+}
+
+/* Estilizando as SPANs da classe PIANO-KEYS */
+.piano-keys span {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.13rem;
+}
+
+/* Criando efeito PRESSIONAR nas teclas brancas */
+.piano-keys .white:active {
+    /* Criando sombra interna com box-shadow */
+    box-shadow: inset -5px 5px 20px
+    rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to botton #fff 0%, #eee 100%);
+}
+
+/* Criando efeito PRESSIONAR nas teclas pretas */
+.piano-keys .black:active {
+    /* Criando sombra interna com box-shadow */
+    box-shadow: inset -5px 5px 10px
+    rgba(255, 255, 255, 0.1);
+    background: linear-gradient(to botton #000, #434343);
+}
