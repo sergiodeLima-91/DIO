@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano Simulator</title>
+
+    <!-- Styles -->
+    <!-- Preconnet: Para conectar-se a API do G. Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Parte Estática -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fonte em si e tamanhos selecionados dela -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
+</head>
+<body>
+    <!-- Container Principal -->
+    <div class="container"> 
+        <!--Cabeçalho-->
+        <header>
+            <h2>Virtual Piano</h2>
+            <!--Sintaxe de Atalho: (div.column>span)*2-->
+            <div class="column volume-slider"> <!--Slider para controlar o volume do piano-->
+                <span>Volume</span> <input type="range">
+            </div>
+            <div class="column keys-check"> <!--Botão on/off para visualização das teclas-->
+                <span>Teclas</span> <input type="checkbox" checked>
+            </div>
+        </header>
+        <!--Criando as teclas-->
+        <!-- Sintaxe de Atalho (emergy): ul.piano-keys>(li.key>span)*16 -->
+        <ul class="piano-keys">
+            <li class="key white"><span>a</span></li>
+            <li class="key black"><span>w</span></li>
+            <li class="key white"><span>s</span></li>
+            <li class="key black"><span>e</span></li>
+            <li class="key white"><span>d</span></li>
+            <li class="key black"><span>f</span></li>
+            <li class="key whitey"><span>t</span></li>
+            <li class="key black"><span>g</span></li>
+            <li class="key white"><span>y</span></li>
+            <li class="key black"><span>h</span></li>
+            <li class="key white"><span>u</span></li>
+            <li class="key black"><span>j</span></li>
+            <li class="key white"><span>k</span></li>
+            <li class="key black"><span>o</span></li>
+            <li class="key white"><span>l</span></li>
+            <li class="key black"><span>p</span></li>
+            <li class="key white"><span>;</span></li>
+        </ul>
+    </div>
+
+    <script src="./src/scripts/engine.js"></script>
+</body>
+</html>

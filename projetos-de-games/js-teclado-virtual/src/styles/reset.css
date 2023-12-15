@@ -1,0 +1,9 @@
+/* Seletor universal */
+
+*{
+    margin: 0;
+    padding: 0;
+    /* Parte de borda a borda da página */
+    box-sizing: border-box; 
+    font-family: "Poppins", sans-serif; 
+}

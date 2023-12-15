@@ -1,0 +1,96 @@
+/* Recomenda-se começar estilizando o maior container do HTML que, nesse caso, é o "body" */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #e3f2fd;
+    color: #fff;
+}
+
+/* O segundo maior é o próprio é a própria div que tem a classe "container" */
+.container {
+    width: 780px;
+    border-radius: 20px;
+    padding: 35px 40px;
+    background-color: black;
+}
+
+/* Estilizando as fontes do HEADER com Google Fonts */
+.container header {
+    color: #b2b2b2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h2 {
+    font-size: 1.6rem; /* REM é para fontes escaláveis, melhor que pixels no que tange a redimensionamento. O valor base (16px) pode mudar a depender do tamanho da tela. */
+}
+
+header .column {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilizando as spans */
+header .column span {
+    font-weight: 500; /* Determinar peso da fonte */
+    margin-right: 15px;
+    font-size: 1.19rem;
+}
+
+/* Estilizando o INPUT do volume */
+.volume-slider input {
+    /* Cor acentuada: */
+    accent-color: #fff;
+}
+
+/* Estilizando o checkbox para ver as letras do teclado do computador nas teclas */
+.keys-check input {
+    /* Largura */
+    width: 60px; 
+    /* Altura */
+    height: 30px; 
+    /* Retirando o efeito de contorno gerado pela tecla TAB */
+    outline: none; 
+    /* Desativando a aparência padrão para que possamos estilizar o checkbox */
+    appearance: none; 
+    border-radius: 30px;
+    background-color: #4b4b4b;
+    /* Tornando o botão um objeto clicável */
+    cursor: pointer;
+    /* Criando elementos dentro do botão */
+    /* Obs: DIV Pai > position: relative / DIV Filha > position: absolute; */
+    position: relative;
+}
+
+/* Criando pseudo-elementos 
+Pseudo elementos simulam DIVs antes (before) ou depois (after) de outros elementos */
+.keys-check input::before {
+    content: "";
+    height: 20px;
+    width: 20px;
+    background-color: #8c8c8c;
+    top: 50%;
+    left: 0.3rem;
+    border-radius: inherit; /* Herda a mesma configuração do border-radius do elemento pai  */
+    position: absolute; /* Adequar-se ao ancestral mais próximo que, noc caso é a classe real que está com o "position: relative;" */
+    /* Centralizando a bolinha */
+    transform: translateY(-50%);
+    /* Suavizando transição da bolinha quando ativada/desativada*/
+    transition: all 0.3s ease-in; /* EASE confere mais macies na transição */
+}
+
+/* Criando animação  de on/off no checkbox */
+.keys-check input:checked::before {
+    left: 2.1rem;
+    background-color: #fff;
+    
+}
+
+/* Estilizando com as teclas do piano */
+.piano-keys {
+    display: flex;
+    margin-top: 40px;
+}
