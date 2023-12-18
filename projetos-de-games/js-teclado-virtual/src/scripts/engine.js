@@ -2,15 +2,21 @@
 // "querySelectorAll" é usado quando vamos pegar mais de um elemento de uma fonte de dados. No caso, queremos pegar todas as tags que tenham a classe piano-keys com subclasse key
 const pianoKeys = document.querySelectorAll(".piano-keys .key");
 
+//Criando controle de volume (slider):
+const volumeSlider = document.querySelector(".volume-slider input");
+
+//Criando mecânica de mostrar/esconder teclas do computador no piano:
+const keysCheck = document.querySelector(".keys-check input");
+
 // Teclas mapeadas - Isto é, só serão consideradas para efeito de ativação das teclas do piano as teclas do computador que se encontram dentro deste vetor (A,W,S,E,D,F,T,G,Y,H,U,J,K,O,P e ";", no caso).
 let mapedKeys = [];
 
 // Carregando audio do som das teclas
-let audio = new  Audio("src/tunes/a.wav");
+let audio = new  Audio("src/songs/a.wav");
 
 const playTune = (key) => {
     // Configurando o play do audio de acordo com a tecla pressionada
-    audio.src = `src/tunes/${key}.wav`
+    audio.src = `src/songs/${key}.wav`
     audio.play();
     console.log(mapedKeys);
 
@@ -44,3 +50,22 @@ document.addEventListener("keydown",
         }        
     }
 );
+
+const handleVolume = (e) => {
+    audio.volume = e.target.value;
+};
+
+//Criando evento para o controle do volume (volumeSlider):
+//Evento vinculado a sempre que o usuário manipular o slide (que é o input)
+
+const showHideKeys = () => {
+    //Diferença do TOGGLE para o ADD: O toggle adiciona a respectiva classe automaticamente caso ela não exista e a remove caso exista. É um efeito de liga/desliga. 
+    pianoKeys.forEach(key => key.classList.toggle("hide"));
+}
+
+volumeSlider.addEventListener("input", handleVolume);
+
+//Criando evento para mostrar as teclas do computador no piano (keysCheck):
+//Evento vinculado a sempre que o usuário ativar/desativar o checkbox (que é o input)
+
+keysCheck.addEventListener("click", showHideKeys);

@@ -25,7 +25,7 @@
             <h2>Virtual Piano</h2>
             <!--Sintaxe de Atalho: (div.column>span)*2-->
             <div class="column volume-slider"> <!--Slider para controlar o volume do piano-->
-                <span>Volume</span> <input type="range">
+                <span>Volume</span> <input type="range" min="0" max="1" value="0.5" step="any">
             </div>
             <div class="column keys-check"> <!--Botão on/off para visualização das teclas-->
                 <span>Teclas</span> <input type="checkbox" checked>
