@@ -140,7 +140,7 @@ Pseudo elementos simulam DIVs antes (before) ou depois (after) de outros element
 }
 
 /* Criando efeito PRESSIONAR nas teclas brancas */
-.piano-keys .white:active {
+.piano-keys .white.active {
     /* Criando sombra interna com box-shadow */
     box-shadow: inset -5px 5px 20px
     rgba(0, 0, 0, 0.2);
@@ -148,7 +148,7 @@ Pseudo elementos simulam DIVs antes (before) ou depois (after) de outros element
 }
 
 /* Criando efeito PRESSIONAR nas teclas pretas */
-.piano-keys .black:active {
+.piano-keys .black.active {
     /* Criando sombra interna com box-shadow */
     box-shadow: inset -5px 5px 10px
     rgba(255, 255, 255, 0.1);
