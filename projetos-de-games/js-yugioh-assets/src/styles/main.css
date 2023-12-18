@@ -2,7 +2,7 @@
 .bg-video {
     /* Para poder manipular o video */
     position: absolute;
-    /* Deixar o vídeo como plano de fundo de tudo. O "z-index" controla a dimensão Z, que seria a profundidade */
+    /* Deixar o vídeo como plano de fundo de tudo. O "z-index" controla a dimensão Z, que seria a profundidade em termos matemáticos (plano cartesiano): */
     z-index: -2;
     width: 100vw;
     height: 100vh;
@@ -16,6 +16,7 @@
     height: 100vh;
 }
 
+/* Deixando o vídeo de fundo mais escuro para não ser percebido com um pseudo-elemento */  
 .bg-video::after{
     content: "";
     position: absolute;
@@ -29,4 +30,58 @@
         rgba(0,0,0,0.8) 50%,
         rgba(0,0,0,1) 100%
     );
+}
+
+/* Jogando o container geral na frente do vídeo de fundo: */
+.container {
+    /* Os filhos são relativos aos pais absolutos! */
+    position: relative;
+    /* Para garantir que o container e seus elementos ficarão a frente do vídeo de fundo, usamos um valor positivo no "z-index", responsável pela profundidade dos elementos: */
+    z-index: 3;
+    display: flex;
+    height: 100vh;
+}
+
+/* Estilizando o container-left: */
+.container-left {
+    width: 35%;
+    min-width: 300px;
+    /* Colocando os elementos um embaixo do outro */
+    flex-direction: column;
+    align-items: center;
+    /* Colocando espaçamento entre os elementos no container (pontuação - avatar da carta - atributos da carta). */
+    justify-content: space-around;
+}
+
+/* Estilizando a caixa de pontuação */
+.score_box {
+    background-color: #fff;
+    padding: 30px;
+}
+
+/* Criando uma espécie de sombra ao redor da caixa de pontuação. A classe frame foi criada somente para isso. */
+.frame {
+    border: 3px solid #000;
+    border-radius: 5px;
+}
+
+/* Estilizando os detalhes da carta */
+.card_details {
+    background-color: #fff;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 6rem;
+    width: 100%;
+}
+
+/* Estilizando os elementos dos detalhes da carta particularmente */
+#card-name {
+    font-size: 0.8rem;
+}
+
+#card-type {
+    font-size: 1rem;
 }
