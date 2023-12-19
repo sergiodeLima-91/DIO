@@ -56,6 +56,24 @@
                 </div>
     
                 <div class="card-versus">
+                    <!-- div.versus-top+div.versos-botton -->
+                    <!--Local onde as cartas são comparadas:-->
+                    <div class="versus-top">
+                        <!--Quando as cartas são colocadas em jogo:-->
+                        <div class="card-infield">
+                            <img id="player-field-card" height="180px" width="125px">
+                        </div>
+
+                        <img height="100px" src="./src/assets/icons/millenium2.png">
+
+                        <div class="card-infield">
+                            <img id="computer-field-card" height="180px" width="125px">
+                        </div>
+                    </div>
+                    <div class="versos-botton">
+                        <!--ID nomeado de next-duel porque o objetivo do botão é sempre levar ao próximo duelo-->
+                        <button id="next-duel" class="rpgui-button" onclick="resetDuel()">GANHOU!</button>
+                    </div>
     
                 </div>
     
