@@ -67,6 +67,41 @@ const cardData = [
     }
 ];
 
+//Criando função que sorteia ID das cartas:
+async function getRandomCardId(){
+    const randomIndex = Math.floor(Math.random() * cardData.length)
+    return cardData[randomIndex].id;
+}
+
+//Criando função que sorteia imagem das cartas:
+//randomIdCard: De qual ID a imagem será resgatada - fieldSide: Em que lado do campo ela será setada (colocada).
+async function createCardImage(IdCard, fieldSide){
+    // Do "document" cria elementos. O Browser enxerga as tags como elementos!
+    const cardImage = document.createElement("img");
+    //Setando atributo height na constante cardImage:
+    cardImage.setAttribute("height", "100px");
+    // Para colocar as cartas "de costas" no field com outra imagem por cima:
+    cardImage.setAttribute("src", ".src/assets/icons/card-back.png");
+    // Salvando ID da carta para poder comparar ela com a do adversário:
+    cardImage.setAttribute("data-id", IdCard);
+    // Para futuras animações nas cartas:
+    cardImage.classList.add("card");
+
+    // Criando condcional para liberar seleção das cartas que são DO PLAYER e não do computador:
+    if(fieldSide === playerSides.player1){
+        cardImage.addEventListener("click", () => {
+            setCardsField(cardImage.getAttribute("data-id"))
+        })
+    }
+
+    //Criando animação de apresentar a carta no painel esquerdao quando o mouse estiver encima dela:
+    cardImage.addEventListener("mouseover", ()=> {
+        drawSelectCard(IdCard);
+    });
+    
+    return cardImage;
+}
+
 //Criando a função que sorteia as cartas:
 // cardNumbers = quantidade de cartas - FieldSide = Para quem o sorteio é realizado
 async function drawCards(cardNumbers, fieldSide){
