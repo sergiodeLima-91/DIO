@@ -21,7 +21,43 @@ const state = {
     }
 };
 
+//Listando as cartas (enumerar) do jogo para recuperar elas depois:
+// O recomendado colocar os assests num banco de dados, mas aqui a proposta é simples.
 
+//Colocando o caminho das imagens numa constante para ser chamado por interpolação de strings:
+const pathImage = ".src/assets/icons/";
+const cardData = [
+    // Para cada registro deste vetor, vamos criar um objeto:
+    {
+        id: 0,
+        name: "Blue Eyes White Dragon",
+        type: "Paper",
+        img:  `${pathImage}dragon.png`,
+        //De que carta esta daqui perde ou ganha:
+        WinOf: [1],
+        LoseOf: [2],
+    },
+
+    {
+        id: 1,
+        name: "Dark Magician",
+        type: "Rock",
+        img:  `${pathImage}magician.png`,
+        //De que carta esta daqui perde ou ganha:
+        WinOf: [2],
+        LoseOf: [0],
+    },
+
+    {
+        id: 2,
+        name: "Exodia",
+        type: "Scissors",
+        img:  `${pathImage}exodia.png`,
+        //De que carta esta daqui perde ou ganha:
+        WinOf: [0],
+        LoseOf: [1]
+    }
+]
 
 // Função para chamar outras funções:
 function init(){
