@@ -50,12 +50,12 @@
         </div>
 
         <div class="container__right">
-            <dv class="card-box__contaniner">
-                <!--A classe FRAMED está sendo importada do framework-->
-                <div class="card-box__container framed" id="computer-cards"> <!--Local das cartas do inimigo-->
+            <div class="card-box__container">
+            <!--A classe FRAMED está sendo importada do framework-->
+                <div class="card-box framed" id="computer-cards"> <!--Local das cartas do inimigo-->
                 </div>
-    
-                <div class="card-versus">
+
+                <div class="card-versus__container">
                     <!-- div.versus-top+div.versos-botton -->
                     <!--Local onde as cartas são comparadas:-->
                     <div class="versus-top">
@@ -70,17 +70,16 @@
                             <img id="computer-field-card" height="180px" width="125px">
                         </div>
                     </div>
-                    <div class="versos-botton">
+
+                    <div class="versus-botton">
                         <!--ID nomeado de next-duel porque o objetivo do botão é sempre levar ao próximo duelo-->
                         <button id="next-duel" class="rpgui-button" onclick="resetDuel()">GANHOU!</button>
                     </div>
-    
                 </div>
-    
-                <div class="card-box framed" id="player-cards"> <!--Local das cartas do inimigo-->
+
+                <div class="card-box framed" id="player-cards"> <!--Local das cartas do jogador-->
                 </div>
-            </dv>
-            
+            </div>            
         </div>
     </div>
     

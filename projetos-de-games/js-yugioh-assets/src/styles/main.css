@@ -53,6 +53,11 @@
     justify-content: space-around;
 }
 
+/* Estilizando o container right */
+.container__right {
+    width: 75%;
+}
+
 /* Estilizando a caixa de pontuação */
 .score_box {
     background-color: #fff;
@@ -86,4 +91,59 @@
     font-size: 1rem;
 }
 
-/* Estilizando o container right */
+/* Estilizando o Card-Box Container */
+.card-box__container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.3rem;
+}
+
+/* Colocando o comparador de cartas em linna */
+.card-versus__container {
+    /* Para desgrudar o comparador de cartas do container das cartas da máquina (encima) e centralizar. */
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.1rem;
+    height: 300px; 
+}
+
+/* Estilizando os containers "versus-top" e "versus-botton" ao mesmo tempo */
+.versus-top,
+.versus-botton {
+    /* Jogando os elementos em linha com "display:flex" */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Acrescentando estilização extra no versus-botton */
+.versus-botton {
+    margin-top: 1rem;
+}
+
+/* Estilização do botão */
+#next-duel {
+    /* Permanecerá em "none" ´porque ele só deve aparecer no fim do duelo. */
+    display: none;
+}
+
+/* Estilizando as caixas de cartas do usuário e do computador */
+.card-box {
+    height: 9rem;
+    width: 100%;
+    display: flex;
+    /* Manter o encaixe das cartas em linha */
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Estilizando o encaixe das cartas para comparação no jogo (card-infield) */
+.card-infield {
+    height: 11.2rem;
+    width: 8rem;
+    border-radius: 8px;
+}
