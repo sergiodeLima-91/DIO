@@ -120,7 +120,7 @@ async function setCardsField(cardId) {
 
 //Criando função que exige o resultado do duelo
 async function drawButton(text){
-    state.actions.button.innerText = text;
+    state.actions.button.innerText = text.toUpperCase();
     state.actions.button.style.display = "block";
 };
 
@@ -132,11 +132,13 @@ async function updateScore(){
 //Verificação de quem ganhou:
 async function checkDuelResults(playerCardId, computerCardId){
     //Sempre iniciar com empate por padrão (variável neutra)
-    let duelResults = "Empate"
+    let duelResults = "Draw Game!"
     let playerCard = cardData[playerCardId];
     //Se dentro da propriedade WinOf do objeto playerCard tiver o número igual ao de computerCardId...
     if(playerCard.WinOf.includes(computerCardId)){
         duelResults = "You Win!";
+        //Chamando função de Audio de Vitoria:
+        await playAudio("win");
         //Adicionando um ponto ao score:
         state.score.playerScore++;
     }
@@ -144,6 +146,8 @@ async function checkDuelResults(playerCardId, computerCardId){
     //Caso o jogador perca:
     if(playerCard.LoseOf.includes(computerCardId)){
         duelResults = "You Lose!";
+        //Chamando função de Audio de Derrota:
+        await playAudio("lose");
         state.score.computerScore++;
     }
 
@@ -188,6 +192,27 @@ async function drawCards(cardNumbers, fieldSide){
         //Agora temos que colocar a imagem correspodente no local correto de acordo com o jogador:
         document.getElementById(fieldSide).appendChild(cardImage);
     }
+}
+
+//Criando função que reseta o jogo após apresentação do resultado:
+async function resetDuel(){
+    // Limpar carta que está no painel a esquerda:
+    state.cardSprites.avatar.src = "";
+    // Esconder botão win/lose:
+    state.actions.button.style.display = "none";
+    // Resentando o field cards onde as cartas são colocadas quando selecionadas:
+    state.fieldCards.player.style.display  = "none";
+    state.fieldCards.computer.style.display  = "none";
+
+    init();
+
+};
+
+// Função de Efeitos Sonoros:
+async function playAudio(status){
+    const audio = new Audio(`./src/assets/audios/${status}.wav`)
+    audio.volume = 0.1;
+    audio.play();
 }
 
 // Função para chamar outras funções:
