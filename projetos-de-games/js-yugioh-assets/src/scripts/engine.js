@@ -114,7 +114,40 @@ async function setCardsField(cardId) {
 
     // //Função que atualiza a pontuação:
     await updateScore();
-    await drawButton();
+    //Função que exibe o resultado da comparação (duelo)
+    await drawButton(duelResults);
+};
+
+//Criando função que exige o resultado do duelo
+async function drawButton(text){
+    state.actions.button.innerText = text;
+    state.actions.button.style.display = "block";
+};
+
+//Criando função que atualiza visualmente a imagem de SCORE:
+async function updateScore(){
+    state.score.scoreBox.innerText = `Win: ${state.score.playerScore} | Lose: ${state.score.computerScore}`
+}
+
+//Verificação de quem ganhou:
+async function checkDuelResults(playerCardId, computerCardId){
+    //Sempre iniciar com empate por padrão (variável neutra)
+    let duelResults = "Empate"
+    let playerCard = cardData[playerCardId];
+    //Se dentro da propriedade WinOf do objeto playerCard tiver o número igual ao de computerCardId...
+    if(playerCard.WinOf.includes(computerCardId)){
+        duelResults = "You Win!";
+        //Adicionando um ponto ao score:
+        state.score.playerScore++;
+    }
+
+    //Caso o jogador perca:
+    if(playerCard.LoseOf.includes(computerCardId)){
+        duelResults = "You Lose!";
+        state.score.computerScore++;
+    }
+
+    return duelResults;
 };
 
 //Criando função que elimina as demais cartas quando uma é selecionada:

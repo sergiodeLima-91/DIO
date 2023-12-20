@@ -43,7 +43,7 @@
 }
 
 /* Estilizando o container-left: */
-.container-left {
+.container__left {
     width: 35%;
     min-width: 300px;
     display: flex;
@@ -51,7 +51,7 @@
     flex-direction: column;
     align-items: center;
     /* Colocando espaçamento entre os elementos no container (pontuação - avatar da carta - atributos da carta). */
-    justify-content: space-around;
+    justify-content:space-around;
 }
 
 /* Estilizando o container right */
