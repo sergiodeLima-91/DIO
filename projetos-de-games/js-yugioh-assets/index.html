@@ -1,25 +1,26 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Reset CSS -->
-    <link rel="stylesheet" href="./src/styles/reset.css">
+    <title>Jo-Ken-Po - Yu-Gi-Oh</title>
 
-    <!-- Framework -->
-    <link rel="stylesheet" href="./src/styles/buttons.css">
-    <link rel="stylesheet" href="./src/styles/containers_and_frames.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./src/assets/favicon/Favicon.ico" type="image/x-icon">
 
-    <!-- Main Style -->
-    <link rel="stylesheet" href="./src/styles/main.css">
-
-    <title>Yu-Gi-Oh Jo-ken-po Edition</title>
-
-    <!-- fonts -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
+    
+    <!-- Framework RPGUI -->
+    <link rel="stylesheet" href="./src/styles/containers_and_frames.css">
+    <link rel="stylesheet" href="./src/styles/buttons.css">
+
 </head>
 <body>
     <!-- Sintaxe de atalho: div.bg-video+div.container>(div.container__left+div.container__right) -->
@@ -39,7 +40,7 @@
             </div>
             <div class="menu_avatar">
                 <!-- Atalho: img#card_image -->
-                <img id="card_image">
+                <img id="card-image">
             </div>
             <div class="card_details frame">
                 <!-- Atalho: p#card-name+p#card-type -->
@@ -64,7 +65,7 @@
                             <img id="player-field-card" height="180px" width="125px">
                         </div>
 
-                        <img height="100px" src="./src/assets/icons/millenium2.png">
+                        <img src="./src/assets/icons/millenium2.png" height="100px" alt="Milenium Eye Divisor">
 
                         <div class="card-infield">
                             <img id="computer-field-card" height="180px" width="125px">
