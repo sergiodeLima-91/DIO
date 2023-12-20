@@ -104,10 +104,11 @@
 /* Colocando o comparador de cartas em linna */
 .card-versus__container {
     /* Para desgrudar o comparador de cartas do container das cartas da máquina (encima) e centralizar. */
-    margin-top: 5rem;
     display: flex;
     flex-direction: column;
-    padding-top: 0.1rem;
+    justify-items: center;
+    align-content: center;
+    padding-top: 2.8rem;
     height: 300px; 
 }
 
@@ -159,4 +160,9 @@
 
 .card:hover {
     transform: scale(1.2);
+}
+
+/* Classe de debug */
+.debug{
+    border: 1px solid red;
 }
