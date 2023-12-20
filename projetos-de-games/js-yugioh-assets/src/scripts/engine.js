@@ -100,12 +100,34 @@ async function createCardImage(IdCard, fieldSide){
     return cardImage;
 };
 
+//Colocando as cartas para comparação no field
+async function setCardsField(cardId) {
+    // Função que impede a seleção de quaisquer outras cartas quando já existem cartas nos fields
+    await removeAllCardsImages();
+    //Carta aleatória pro computador:
+    let computerCardId = getRandomCardId();
+
+    state.fieldCards.player.style.display = "block"
+    state.fieldCards.computer.style.display = "block"
+
+    //Setando as imagens:
+    state.fieldCards.player.src = cardData[cardId].img;
+    state.fieldCards.computer.src = cardData[computerCardId].img;
+
+    //Verificação de quem ganhou:
+    let duelResults = await checkDuelResults(cardId, computerCardId);
+
+    //Função que atualiza a pontuação:
+    await updateScore();
+    await drawButton();
+};
+
 //Criando a função para desenhar a carta no painel esquerdo quando o mouse-pointer estiver encima
 async function drawSelectCard(index){
     state.cardSprites.avatar.src = cardData[index].img;
     // "innerText: Texto interno"
     state.cardSprites.name.innerText = cardData[index].name;
-    state.cardSprites.type.innerText = `Atributo: ${cardData[index].type}`;
+    state.cardSprites.type.innerText = "Atributo :"  + cardData[index].type;
 };
 
 //Criando a função que sorteia as cartas:
