@@ -5,7 +5,7 @@ const state = {
     //Objeto SCORE
     score:{
         playerScore: 0,
-        cumputerScore: 0,
+        computerScore: 0,
         scoreBox: document.getElementById("score_points")
     },
     cardSprites: {
@@ -19,7 +19,7 @@ const state = {
     },
     // No caso do botão não é necessário criar um objeto porque ele tem somente uma funcionalidade.
     actions: {
-        button: document.getElementById("next-duel")
+        button: document.getElementById("next-duel"),
     }
 };
 
@@ -28,12 +28,12 @@ const state = {
 
 //Criando constante de enumeração para colocar as imagens das cartas nos fields:
 const playerSides = {
-    player1: "player-field-card",
-    computer: "computer-field-card"    
+    player1: "player-cards",
+    computer: "computer-cards",    
 }
 
 //Colocando o caminho das imagens numa constante para ser chamado por interpolação de strings:
-const pathImage = ".src/assets/icons/";
+const pathImage = "./src/assets/icons/";
 const cardData = [
     // Para cada registro deste vetor, vamos criar um objeto:
     {
@@ -81,7 +81,7 @@ async function createCardImage(IdCard, fieldSide){
     //Setando atributo height na constante cardImage:
     cardImage.setAttribute("height", "100px");
     // Para colocar as cartas "de costas" no field com outra imagem por cima:
-    cardImage.setAttribute("src", ".src/assets/icons/card-back.png");
+    cardImage.setAttribute("src", "./src/assets/icons/card-back.png");
     // Salvando ID da carta para poder comparar ela com a do adversário:
     cardImage.setAttribute("data-id", IdCard);
     // Para futuras animações nas cartas:
@@ -90,8 +90,8 @@ async function createCardImage(IdCard, fieldSide){
     // Criando condcional para liberar seleção das cartas que são DO PLAYER e não do computador:
     if(fieldSide === playerSides.player1){
         cardImage.addEventListener("click", () => {
-            setCardsField(cardImage.getAttribute("data-id"))
-        })
+            setCardsField(cardImage.getAttribute("data-id"));
+        });
     }
 
     //Criando animação de apresentar a carta no painel esquerdao quando o mouse estiver encima dela:
@@ -100,6 +100,14 @@ async function createCardImage(IdCard, fieldSide){
     });
     
     return cardImage;
+}
+
+//Criando a função para desenhar a carta no painel esquerdo quando o mouse-pointer estiver encima
+async function drawSelectCard(index){
+    state.cardSprites.avatar.src = cardData[index].img;
+    // "innerText: Texto interno"
+    state.cardSprites.name.innerText = cardData[index].name;
+    state.cardSprites.type.innerText = "Atribute : " + cardData[index].type; 
 }
 
 //Criando a função que sorteia as cartas:
@@ -122,4 +130,4 @@ function init(){
     drawCards(5, playerSides.computer);
     }
 
-
+init();
