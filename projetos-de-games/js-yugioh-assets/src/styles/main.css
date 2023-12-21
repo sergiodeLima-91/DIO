@@ -1,3 +1,17 @@
+/* Estilizando Cursor do Mouse */
+body {
+    cursor: url("../assets/cursor/yugicursor.png"), default;
+}
+
+/* Setando cursor especial em alguns casos: */
+button,
+a,
+img:hover,
+button:hover,
+a:hover{
+    cursor: url("../assets/cursor/yamiyugicursorGLOW.png"), auto
+}
+
 /* Manipulando o vídeo de fundo */
 .bg-video {
     /* Para poder manipular o video */
