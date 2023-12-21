@@ -102,12 +102,13 @@ async function setCardsField(cardId) {
     //Carta aleatória pro computador:
     let computerCardId =  await getRandomCardId();
 
-    state.fieldCards.player.style.display = "block";
-    state.fieldCards.computer.style.display = "block";
+    await ShowHiddenCardFieldsImages(true);
+
+    //Função que reseta detalhes das cartas no painel esquerdo:
+    await hiddenCardDetails();
 
     //Setando as imagens:
-    state.fieldCards.player.src = cardData[cardId].img;
-    state.fieldCards.computer.src = cardData[computerCardId].img;
+    await drawCardsInField(cardId, computerCardId);
 
     //Verificação de quem ganhou:
     let duelResults = await checkDuelResults(cardId, computerCardId);
@@ -117,6 +118,32 @@ async function setCardsField(cardId) {
     //Função que exibe o resultado da comparação (duelo)
     await drawButton(duelResults);
 };
+
+//Criando a Função que Seta as Imagens no Field:
+async function drawCardsInField(cardId, computerCardId){
+    state.fieldCards.player.src = cardData[cardId].img;
+    state.fieldCards.computer.src = cardData[computerCardId].img;
+}
+//Criando função que mostra/esconde os fields dos versus:
+async function ShowHiddenCardFieldsImages(value) {
+    if(value == true) {
+    state.fieldCards.player.style.display = "block";
+    state.fieldCards.computer.style.display = "block";
+    }
+
+    if(value == false) {
+        state.fieldCards.player.style.display = "none";
+        state.fieldCards.computer.style.display = "none";
+    }
+    
+};
+
+//Criando função que reseta campos de detalhe das cartas do lado esquerdo:
+async function hiddenCardDetails(){ 
+    state.cardSprites.avatar.src = "";
+    state.cardSprites.name.innerText = "";
+    state.cardSprites.type.innerText = "";
+}
 
 //Criando função que exige o resultado do duelo
 async function drawButton(text){
@@ -203,7 +230,7 @@ async function resetDuel(){
     // Resentando o field cards onde as cartas são colocadas quando selecionadas:
     state.fieldCards.player.style.display  = "none";
     state.fieldCards.computer.style.display  = "none";
-
+    
     init();
 
 };
@@ -217,6 +244,9 @@ async function playAudio(status){
 
 // Função para chamar outras funções:
 function init(){
+
+    ShowHiddenCardFieldsImages(false);
+
     //Sorteando as cartas para ambos os jogadores:
     drawCards(5, state.playerSides.player1);
     drawCards(5, state.playerSides.computer);
