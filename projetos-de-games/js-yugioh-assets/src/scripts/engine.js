@@ -250,6 +250,11 @@ function init(){
     //Sorteando as cartas para ambos os jogadores:
     drawCards(5, state.playerSides.player1);
     drawCards(5, state.playerSides.computer);
+
+    //Colocando música de fundo:
+    const bgm = document.getElementById("bgm");
+    bgm.volume = 0.2;
+    bgm.play();
     }
 
 init();
