@@ -30,15 +30,12 @@ for (let i = 0; i < emojis.length; i++) {
     box.onclick = handleClick;   
     // Pendurando na div principal "game":
     document.querySelector(".game").appendChild(box);
-    playAudio("soundtrack")
-}
-
-//Tocar música de fundo
-function playAudio(audioName) {
-    const audio = new Audio(`./src/audio/${audioName}.mp3`);
-    audio.volume = 0.2;
-    audio.play();
-}
+    
+    //Tocar música de fundo
+    const music = document.getElementById("musica-de-fundo");
+    music.volume = 0.5;
+    music.play();
+};
 
  // Criando eventos de CLICK:
 function handleClick() {
