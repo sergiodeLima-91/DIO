@@ -1,5 +1,5 @@
 # **📒 ÓRBI WEB GAMES DEVELOPER - ANOTAÇÕES**
-# <br>Pensamento Computacional
+# Pensamento Computacional
 Pensamento computacional pode ser aplicado tanto em humanas quanto em exatas.
 
 ## <br> **Visão Geral do Pensamento Computacional:**
@@ -181,6 +181,15 @@ Porque determinar padrões?
 - Assar filé
 - Encontrar água
 - Construir abrigo
-- Maximizar chances de resgate
+- Maximizar chances de resgate<br>
 
+---
+# Lógica de Programação Essencial
 
+_**Programar é  resolver problemas!**_
+
+> O que é lógica?
+- Coerência de raciocínio, de ideias
+- Sequência coerente, regular e necessária de acontecimentos, coisas
+- É a escolha da melhor sequência de ações para solucionar um problema
+- **Metacognição:**  "Pensar como você pensa"
