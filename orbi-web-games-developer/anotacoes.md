@@ -299,4 +299,111 @@ _Programar é  resolver problemas!_
  - Interpretadas: Código-fonte é executado por um programa chamado de interpretador e em seguida é executado pelo SO ou processador (JS, Python, PHP, etc.)
 
 > Portugol:
-- Pseudolinguagem que trabalha a resolução de problemas lógicos em si e não nas ferramentas para solucioná-los. 
+- Pseudolinguagem que trabalha a resolução de problemas lógicos em si e não nas ferramentas para solucioná-los.
+
+<br>
+
+---
+# Projetos Ágeis Com SCRUM
+
+## <br> **1 - Introdução ao SCRUM**
+
+<br>
+
+### 1 - Introdução a Gestão de Projetos a ao SCRUM
+<br>
+
+> Conceitos Básicos:
+- Dos objetivos de negócios de uma empresa é que nascem os requisitos no desenvolvimento de um projeto.
+- Desperdício de software: Empresas chegam a não usar os programas desenvolvidos pelos profissionais. Esse desperdício tem a ver com a gestão do projeto
+
+<br>
+
+> Modelos de Gestão de Projetos:
+
+|Tradicional (Waterfall)|Ágil (SCRUM)|
+------------|----|
+Só avança para a próxima quando uma fase está inteiramente completa.|O SF é construído em partes (incremental)
+Parte burocrática é um problema no andamento e finalização do projeto.|Cada parte é executada em um ciclo (um mês mais ou menos para cada parte).
+Escopo definido na fase inicial.|Escopo definido ao longo do projeto.
+Projeto é controlado por fases e marcos.|Projeto é controlado pela entrega de funcionalidades.
+Cliente só vê SW funcionando na parte final.| Cliente pode ver o SW funcionando na parte inicial
+Há resistência à mudanças.| Mudanças constantes de acordo com feedbacks constínuos.
+
+> O que é Ser Hágil?
+- Não é ser rápido em essência, mas ser rápido na mudança e no desembaraço. 
+- É velocidade na adaptação.
+- Fazer o complexo de forma simples (fatiar os problemas)
+- Equipe comprometida com os objetivos.
+- É foco no cliente e não no projeto
+
+> O Que é SCRUM?
+- Um dos frameworks de gerenciamento de projetos ágeis (baseado no esporte HUGBI).
+- Projetos usando equipes pequenas e multidisciplinares gerando maiores resultados.
+
+> Pilares do SCRUM:
+- Conversar mais escrever menos (TRANSPARÊNCIA)
+- Demonstrar o SW constantemente aos usuários e receber feedbacks constantes (TRANSPARÊNCIA)
+- Requisitos mudam ao longo do tempo (ADAPTAÇÃO)
+- Aprender progressivamente com o uso do SW (INSPEÇÃO)
+
+> Razões para Adotar SCRUM:
+- Desenvolvido e entregue em partes menores (2 a 4 semanas)
+- Melhor geenciamento de riscos (redução de incertezas)
+- Comprometimento, motivação e transparência da equipe (Daily Meeting)
+- Maior valor para o negócio (Priorização do Backlog)
+- Usuários envolvidos durante todo o ciclo
+- Aplicação das Lições Aprendidas (melhoria contínua)
+
+> Por que Startups Usam?
+- Por causa do **Minimum Viable Product (MVP)**: Uso mínimo do SW para que o cliente veja o que realmente quer e dê seu feeedback
+
+<br>
+
+### 2 - Papeis e Responsabilidades de cada Membro SCRUM:
+
+<br> 
+
+> Product Owner (PO)
+- Representa a área de negócios
+- Não é um comitê
+- Define funcionalidades do SW (Product Backlog)
+- Prioriza as funcionlidades de acordo com o valor do negócio
+- Assegura que o time de devs entenda os itens do Backlog no nível necessário
+
+> Scrum Master:
+- Garantir uso correto do SCRUM
+- Não é gerente de projetos
+- Age como facilitador
+- Auxilia o Product Owner no planejamento e estimativas do Backlog
+- Auxilia equipe a remover impedimentos
+- Treina time de devs para autogerenciamento e interdisciplina
+
+> Time de Devenvolvimento:
+- Desenvolvem
+- Testam
+- Criam e Desenham
+<p>Isto é, fazem tudo em relação ao desenvolvimento.
+
+<br>
+
+### 3 - Cerimônias do SCRUM:
+<br>
+
+> Time Box:
+- Tempo máximo para fazer uma cerimônia ou Sprint (corrida, arrancada).
+- Sprint é o principal evento do SCRUM
+- Quem define o tempo da Sprint é o próprio time
+
+> Composição da Sprint:
+- Planejamento da Sprint: PO participa junto com o SCRUM master e o time dev. O que fazer (4 horas para definir) - Como fazer (4 horas para definir). Planning Poker: opiniões sobre cada tarefa
+- Reuniões Diárias (Daily Meeting): Stund Up Meeting. Conversa sobre o dia anterior e as tarefas de hoje. Dura cerca de 15 minutos
+- Rvisão da Sprint (Review): Time dev apresenta ao PO o trabalho feito. Dura cerca de 4 horas.
+- Retrospectiva da Sprint: Lições aprendidas. Transparência é regra aqui. Sinceridade. Dura cerca de 3 horas.
+
+## <br> **2 - Fundamentos do Projeto Ágil**
+<br>
+
+### 1 - Papeis e Responsabilidades - Product Owner:
+
+
