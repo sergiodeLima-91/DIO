@@ -401,9 +401,172 @@ Há resistência à mudanças.| Mudanças constantes de acordo com feedbacks con
 - Rvisão da Sprint (Review): Time dev apresenta ao PO o trabalho feito. Dura cerca de 4 horas.
 - Retrospectiva da Sprint: Lições aprendidas. Transparência é regra aqui. Sinceridade. Dura cerca de 3 horas.
 
-## <br> **2 - Fundamentos do Projeto Ágil**
 <br>
 
-### 1 - Papeis e Responsabilidades - Product Owner:
+---
+# Desenvolvimento Web: Primeiros Passos
+
+## **1 - O Que é a Internet**
+
+### <br> 1 - Introdução ao Tema
+<br>
+
+> História
+- 1969: Arpanet - Departamento de Defesa - Guerra Fria
+- 1982: Universidades - Holanda, Dinamarca e Suécia
+- 1987: Liberado uso comercial nos EUA
+- 1992: CERN cria WWW. Dados acessíveis a qualquer pessoa com a internet
+
+> Brasil
+- 1988: FAPESP, UFRJ, LNCC trouxeram internet pra cá
+- 1994: Uso comercial - EMBRATEL
+- Conexão discada
+- 2000: Banda Larga
+
+### <br> 2 - Termos-chave
+<br>
+
+- Download
+- Navegador
+- Banda Larga
+- Cache (dados previamente salvos pelo browser)
+- Crack (SW pirata)
+- E-mail
+- Emoticons/emoji
+- gif/jpg/png
+- Host (endereço)
+- HTML
+- HTTP
+- Ícone
+- Link (ligação. Não é a mesma coisa que URL!)
+- Login/logon (são a mesma coisa)
+- logout/logoff (são a mesma coisa)
+- mp3
+- multimídia
+- Nick (apelido)
+- Online/offline
+- Pixel (pixar + element = pixel)
+- Span (emails massivos enviados para várias pessoas)
+- URL
+- Vírus (SW malicioso)
+- Keylogger (SW malicioso que grava todas as teclas pressionadas pelo usuário)
+- Backup
+- Blog (espécie de diário no início)
+- Vlog (diário em forma de vídeo. Parente do blog)
+- (Cyber) Bullyng (ameaças, afronta, chantagens on-line)
+- 3G, 4G, 5G (velocidades da internet móvel)
+- Cookies (pequenos registros de navegação do usuário usados pelos algorítmos de vendas)
+- Firewall
+- Hacker
+- IP
+- Phishing (roubo de dados mediante click)
+- Click Bait (roubo de dados mediante click)
+- Fake News
+- Podcast (espécie de rádio na internet)
+- Pop-up (janelas invasivas e irritantes)
+- Youtuber (produtor de conteúdo dessa plataforma)
+
+### <br> 3 - A Internet Atual
+<br>
+
+> Números
+- 134 mi de brasileiros com acesso a internet (75%)
+- Mulheres: 74% / Homens; 73%
+- Há 10 anos somente 41%
+- Área Urbana: 77% / Rural: 53%
+- 97% de pessoas com Ensino Superior acessam
+- ...
+
+## **2 - Como Funciona a Internet**
+
+### <br> O que São Redes:
+
+> Backbone:
+ - Espinha dorsal da internet
+ - Estrutura parruda
+ - Semelhante a costelas
+
+> Provedores de Serviço:
+- Empresas telefônicas
+- Contratam o backbone e repassam para nós ou outras empresas
+- Dial-up
+- ADSL (banda larga)
+- Fibra ótica
+- Rádio
+- Satélite
+- Móvel
+- P2P (peer to peer)
+
+> Caminho Inverso Até Chegar na Nossa Casa:
+- WWW
+- DNS
+- IP
+- Classes de Redes
+- 127.0.0.1 (local host)
+
+<br>_Obs:_ Latência é o tempo que um determinado dado leva para sair de um local de origem até outro local de destino.
+
+<br>
+
+## **3 - TCP/IP - Portas - Roteadores - Switches - Modems**
+
+### <br> 1 - TCP/IP e UDP:
+<br>
+
+> TCP:
+- Protocolo de Controle de Transmissão
+- Usa modelos de camdas
+
+> Etapas da Transmissão:
+- Física (ex: placa de rede)
+- Rede (ex: IP)
+- Transporte (ex: TCP, UDP)
+- Aplicação (ex: FTP, SMTP, HTTP)
+
+> TCP:
+- Mais lento que o UDP
+- Handshake: Confirmação de recebimento de pacote de dados entre dispositivos/softwares
+- Integridade nos dados
+- Ordem nos dados
+- Aplicativo de mensagens de texto
+
+> UDP:
+- Rápido
+- Não confiável
+- Carro do ovo (carro divulga a informação da venda do ovo, mas não sabe se todos estão ouvindo ela!)
+- Livestream
+- Sai mandando informação de maneira adoidada sem saber se todo mundo recebeu
+- Usado em lives por causa da rapidez
+
+### <br> 2 - Portas (Erro de Tradução):
+<br>
+
+> As portinhas por onde os dados sairão e chegarão:
+- FTP: 20
+- SSH: 22
+- SMTP: 25
+- DNS: 53
+- HTTP: 80
+- HTTPS: 443
+
+### <br> 3 - Portas (Erro de Tradução):
+<br>
+
+> Modem:
+- Modulator / demodulator: modula e demodula sinais
+- Converte dados de um computador para o outro
+
+> Roteador:
+- Distribui internet para um ou mais dispositivos de uma rede
+- Pode fazer comunicação entre redes
+- Não filtra dados enviados/recebidos (os mais antigos, os modernos não)
+
+> Switch:
+- Distribui a internet para um ou mais dispositivos de uma rede de forma mais inteligente que os roteadores tradcicionais, verificando qual dispositivo deseja receber certos tipos de dados ou não;
 
 
+
+## **4 - Celulares, Internet e Outros Dispositivos**
+
+### <br> 1 - Dados Móveis:
+<br>
