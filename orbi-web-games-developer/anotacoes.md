@@ -186,10 +186,117 @@ Porque determinar padrões?
 ---
 # Lógica de Programação Essencial
 
-_**Programar é  resolver problemas!**_
+## <br> **1 - Introdução à Lógica e a Programação**
+
+### <br> 1 - Entendendo o Que é Lógica:
+_Programar é  resolver problemas!_
 
 > O que é lógica?
 - Coerência de raciocínio, de ideias
 - Sequência coerente, regular e necessária de acontecimentos, coisas
 - É a escolha da melhor sequência de ações para solucionar um problema
 - **Metacognição:**  "Pensar como você pensa"
+
+### <br> 2 - O Que São Algorítmos e Pseudocódigo
+
+<br>
+
+> Algoritmo: 
+- Sequência de passos para revolver um problema
+- [Site de lógica de programação para iniciantes com base em minecraft](https://studio.code.org/s/mc/lessons/1/levels/1)
+
+> Pseudocódigo:
+- Forma genérica de escrever um algorítmo. É usado somente para se aprender a lógica de programação.
+- [Aprendendo pseudocódigo jogando! Clique aqui!](https://www.proprofsgames.com/wolf-sheep-and-cabbage/)
+
+### <br> 3 - Fluxogramas, Variáveis e Constantes
+ 
+ <br>
+
+ > Fluxograma:
+ - Serve para representar **graficamente** um algorítmo (fluxo de dados). É um tipo de diagrama que pode ser entendido como uma representação esquemática de um processo.
+ - Os fluxogramas não possuem desenhos padrões definitivos. Pode-se encontrar diversos formatos deles por ai.
+ 
+ > Variável:
+ - Objeto ou posição frequentemente localizada na memória e capaz de reter e representar um valor ou expressão. É um espaço na memória do computador que tem seu valor alterado durante a execução do algorítmo.
+
+ > Tipos de Variaveis/Constantes:
+ - Numéricos (inteiro, real)
+ - Caracteres (string)
+ - Alfanuméricos (alfanum)
+ - Lógicos (booleanos)
+
+> Fluxograma:
+- Declaração das variáveis/constantes
+- Entrada dos dados
+- Processamento dos dados recebidos
+- Exibição do resultado
+- [Programa para treinamento em fluxogramas (disponível apenas para windows até a escrita deste material)](http://flowgorithm.org/)
+
+### <br> 4 - Tomadas de Decisões e Expressões:
+
+<br>
+
+> Expressões Aritméticas:
+- Armazenam operadores e funções aritméticos que envolvem constantes e variáveis
+- **Operadores Aritméticos**
+
+> Expressões Literais:
+- Possuem constantes ou variáveis com resultado de **valores literais**. Um literal é um valor expresso como ele mesmo e não como o valor de uma variável ou o resultado de uma expressão, como o número 3 ou a cadeia de caracteres "Olá"([Fonte](https://learn.microsoft.com/pt-br/dotnet/visual-basic/programming-guide/language-features/constants-enums/constant-and-literal-data-types)). Literal tamnbém pode ser definido como uma notação que representa um **valor fixo** no código-fonte ([Fonte](https://pt.wikipedia.org/wiki/Literal_(programa%C3%A7%C3%A3o_de_computadores)))
+
+<br>
+
+> **📋 Conceito Conciso:** <br>Literais são notações que definem outros tipos de dados como numéricos, caracteres, alfanuméricos e lógicos. Portanto, parece-me muito que eles estão intimamente ligados aos tipos primitivos de dados (inteiro, real, string e booleano).
+
+<br>
+
+> Expressões Relacionais:
+- Expressões compostas por outras ou variáveis numéricas com opeadores relacionais (> - >= - < - <= - == - !=)
+
+<br>
+
+> Tomadas de Decisão:
+- Tomam boa parte da programação, por isso precisa ser entendida!
+
+### <br> Concatenação
+
+<br>
+
+> O Que É?
+ - Termo da computação
+
+> Para que Serve?
+- Une o conteúdo de duas strings
+- Agrupa duas ou mais células que podem possuir fórmulas, textos ou outras informações, gerando um único resultado.
+
+
+## <br> **2 - Introdução ao Portugol**
+
+###  <br> 1 - Estruturas de Repetição
+
+<br>
+
+> Conceito
+- Estrutura que permite exevutar mais de uma vez o mesmo comando ou conjunto de comandos mediante uma condição (if) ou um contador (iterador / incrementador). 
+
+###  <br> 2 - O Que São Linguagens de Programação?
+
+<br>
+
+> Conceito:
+- Escrita formal que especifica um conjunto de instruções e regras usadas para gerar programas (softwares)
+- "_O que é óbvio para você, certamente não é óbvio para uma máquina. E se você quer que a máquina faça algo para você, você precisa 'falar com ela'_. "
+
+<br>
+
+> **Conceito Conciso:**
+- Portanto, linguagem de programação é o meio pelo qual humanos e máquinas interagem mutuamente.
+
+>Tipos
+- Alto Nível: Sintaxe se aproxima mais da nossa linguagem e se distanciam mais da linguagem das máquinas.
+- Baixo Nível: Se aproxima mais da linguagem de máquina. Necessário ter o conhecimento direto da arquitetura do computador para fazer alguma coisa.
+- Compiladas: Usam um compilador (C#). Traduz seu código em linguagem de máquina por um processo chamado de compilação e é executado diretamente pelo SO.
+ - Interpretadas: Código-fonte é executado por um programa chamado de interpretador e em seguida é executado pelo SO ou processador (JS, Python, PHP, etc.)
+
+> Portugol:
+- Pseudolinguagem que trabalha a resolução de problemas lógicos em si e não nas ferramentas para solucioná-los. 
