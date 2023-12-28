@@ -726,3 +726,84 @@ Há resistência à mudanças.| Mudanças constantes de acordo com feedbacks con
 <br>
 
 ![](./images/stacks3.png)
+
+<br>
+
+##  **7 - Linguagens de Programação (LPs) e Termos**
+<br>
+
+### 1 - Principais LPs:
+
+<br>
+
+- HTML
+- CSS
+- JS - JQuery - AJAX (consulta muito rápida em BDs) - diversas libs
+- PHP (manipulação de dados)
+- .NET
+- ASP
+- Java 
+- Ruby (on Rails)
+- Python
+- Perl
+- C - C++ - C# (as duas últimas orientadas a objeto) - São mais de baixo nível.
+
+### 2 - Termos Comuns - Parte 1:
+
+<br>
+
+- 404 (endereço inexistente)
+- Algorítmo
+- ALT (texto alternativo que é mostrado pelo cursor do mouse quand encima de um objeto)
+- API (parte de SW sendo usado dentro de outro SW)
+- Aplicação
+- Back-End
+- Biblioteca/dll
+- Bootstrap - Um dos frameworks de Java mais usado hoje em dia
+- Breakpoints - Pontos chave para determinar tamanho da tela em dispositivos móveis OU pontos de parada na execução do DEBUG
+- Browser/navegador
+- Cache
+- Bug
+- Código - Instruções de funcionamento ou interpretação para a execução ou compilação de um app/sw
+- Controle de Versão
+- Cookies
+- DEGUB
+- Deploy
+- Design adaptativo/Responsividade
+- DNS
+- Documentação - Interna (dentro do código) - Externa (manual do usuário)
+- Domínio
+- DPI - Proporção de pontos na tela - Quantos mais pontos na tela maior será a resolução.
+- Editor de Texto
+- Estrutura de Dados - Pilha, Fila, Array, Char, Integer
+- Favicon
+- Fontes - Com serifa, sem serifa
+- Framework - Caixa de ferramenta para desenvolvimento de a´´/sw
+- Front-End
+- FTP - Protocolo de comunivação quase que exclusivamente para troca de arquivos
+- Full-Stack
+- Github/SVN/CVS - - Mais famosos controladores de versão da atualidade
+
+<br>
+
+### 2 - Termos Comuns - Parte 2:
+
+<br>
+
+- Linguagem
+- Meta Tags
+- Métodos Ágil
+- Mobile
+- MVC - Mobile View Controler
+- MVP - Minimal Viable Product: Mínimo recurso de um app/sw disponibilizado ao cliente para realizar testes
+- MySQL
+- Pixel
+- Resolução -  Quantidade de pixel na tela
+- Servidor
+- Sistema Operacional (SO)
+-  Solução - Um programa ou um conjunto de programas fornecidos ao cliente
+- SSL - Camada de segurança dos sites
+- UI - User Interface
+- UX - User Experience: como o usuário lida com o meu programa
+- Versão - Número que vem ANTES do ponto são mudanças grandes, os que vêm DEPOIS do ponto são mudanças pequenas (será isso mesmo?).
+- WYSIWYG - What you see is what you get - O que você vê é o que você obtém. Pequenos editores de texto em sites que permitem alterações visuais e piblicação do texto com estas exatas alterações.
