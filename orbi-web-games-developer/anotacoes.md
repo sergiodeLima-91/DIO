@@ -655,3 +655,74 @@ Há resistência à mudanças.| Mudanças constantes de acordo com feedbacks con
 
 > Mas o Que É Web-Service?
 - Interface para fazer requisições e consultas em BDs inacessíveis (Correios, Governo)
+
+<br>
+
+##  **6 - O Que São Stacks**
+<br>
+
+### 1 - Stacks:
+
+<br>
+
+> Conceito:
+- Pilhas de tecnologia
+- Conjunto de SW necessários e suficientes para executar um aplicativo/programa
+- Envolve linguans de programação
+- Todo o ambiente tecnológico com todas as ferramentas e funcionalidades para operarar com apps/sw
+- Capacidade e limitação de performance
+- Define pontos fortes e fracos dos apps/sws
+
+<br>
+
+> Importância:
+- Informações das equipes de projetos
+- Saber as limitações e capacidades das ferramentas e ambientes têm disponíveis
+- Sistemas, BDs, LP e protocolos de comunicação
+- Estratégias de negócios
+- Contratações, planos de mitigações de riscos, aumento de capacidade, uso dos dados (velocidade de transferência)
+
+### 2 - Back-End, Front-End e Fullstack:
+
+<br>
+
+> Front-End:
+- "Parte da Frente"
+- Site, SW, app, web service
+- Interface, UI, UX
+- Lógica de Programação, HTML, CSS, JQuery/JS/AJAX, PHP, Bootstrap, etc.
+
+<br>
+
+> Back-End
+- Parte de Trás
+- Servidores
+- Bando de Dados
+- Meio-de-Campo entre interface e BD
+- Regras de negócios
+- Validações
+- MySQL
+- Oracle
+- Protocolos de comunicação
+- PHP
+- Java
+- Node.JS
+
+<br>
+
+> Fullstack
+- Trabalha em todas as camadas das tecnologias de desenvolvimento/execução de um app/sw
+
+<br>
+
+> Exemplos:
+
+![](./images/stacks1.png)
+<br>
+<br>
+
+![](./images/stacks2.png)
+<br>
+<br>
+
+![](./images/stacks3.png)
