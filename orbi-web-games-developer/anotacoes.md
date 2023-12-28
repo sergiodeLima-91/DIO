@@ -570,3 +570,88 @@ Há resistência à mudanças.| Mudanças constantes de acordo com feedbacks con
 
 ### <br> 1 - Dados Móveis:
 <br>
+
+> SMS:
+- Tudpo começou com o SMS
+- Quanto custa para uma empresa enviar um SMS? Nada!
+- Troca de pacotes
+
+> MMS:
+- Transmissão de mensagens multimida (audio + video)
+- Conexão de dados primitiva
+
+> Conexões Móveis:
+- 1G (analógico) - 10 Kbps
+- 2G (digital - GSM: Global System for Mobile Comumunication): 97 Kbps
+- 2.5G (GPRS)
+- 2.75 (EDGE)
+3G (7Mbps)
+- 4G (22,1Mbps)
+- 5G (10Gbps)
+
+### <br> 2 - Wi-Fi:
+<br>
+
+> Empresa IEEE (ou I3E)
+- IEEE 802.11
+- . . .(vide aula)
+
+> Segurança
+- WEP
+- WPA
+- WPA2 (AES): + Segurança e + processamento. Mais lento, porém, mais seguro hoje.
+
+> Dispositivos de Rede:
+- Impressora
+- Scanner
+- Chromecast
+
+### <br> 3 - Bluetooth:
+<br>
+
+- Conexão ponto-a-ponto, sem dependencia da internet.
+
+<br>
+
+## **5 - Browser, Sites, Aplicativos e Webserver**
+
+### <br> 1 - Browser:
+<br>
+
+> Características:
+- Identifica diversas linguagens de programação, de marcação e conteúdo multimídia.
+- Possuem plug-ins ou add-ons para ajudar na navegação
+- Usam chache e cookies (rastreadores de preferências para vendas)
+
+> Páginas - Interação Com Elementos:
+- Estáticas
+- Dinâmicas: Partes independentes. Maior interação
+- [Versões antigas de vários sites famosos](https://archive.org/web/)
+
+### <br> 2 - Sites, Aplicativos e E-Commerce:
+<br>
+
+> Site
+- D/XHTML: "D" de dinamic. Caindo em desuso
+
+> Aplicativo:
+- SW executado no seu navegador
+- Um aplicativo nada mais é do que uma espécie de navegador
+- Hoje quase não existe diferença entre site e aplicativo
+- Diferença entre programa/software e aplicativo
+
+> E-Commecer:
+- Comércio eletrônico com sistema de pagamento que pode ser exterior ao site (Pic Pay, Boleto, PagSeguro, PayPal, etc.)
+
+### <br> 3 - Web-Server:
+<br>
+
+> Conceito:
+- Loca onde ficam guardados nossos dados
+
+> Tipos:
+- **Estático:** Servidor físico onde são armazenados arquivos, SW e/ou BD. Possumem resistância de dados
+- **Dinâmico:** SW que estão presents no servidor físico.
+
+> Mas o Que É Web-Service?
+- Interface para fazer requisições e consultas em BDs inacessíveis (Correios, Governo)
