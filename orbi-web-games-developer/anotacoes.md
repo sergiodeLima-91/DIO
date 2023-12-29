@@ -807,3 +807,16 @@ Há resistência à mudanças.| Mudanças constantes de acordo com feedbacks con
 - UX - User Experience: como o usuário lida com o meu programa
 - Versão - Número que vem ANTES do ponto são mudanças grandes, os que vêm DEPOIS do ponto são mudanças pequenas (será isso mesmo?).
 - WYSIWYG - What you see is what you get - O que você vê é o que você obtém. Pequenos editores de texto em sites que permitem alterações visuais e piblicação do texto com estas exatas alterações.
+
+<br>
+
+## Boostrap:
+<br>
+
+> O que é:
+- Framework para desenvolvimento de sites responsivos
+- Vasta biblioteca de componentes
+- Facilita e agiliza desenvolvimento
+- Um dos Frameworks mais conhecidos e usados pelos devs Front-End
+
+> Práticando
