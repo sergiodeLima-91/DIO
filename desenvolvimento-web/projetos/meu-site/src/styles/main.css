@@ -1,0 +1,72 @@
+body {
+    justify-content: center;
+}
+
+.container-avatar {
+    background-image: url('../assets/images/code.png');
+    filter: blur(0.9px);
+    box-shadow: -5px 10px 25px black;
+    border-radius: 5px;
+    border-bottom: ridge;
+    align-items: center;
+    flex-direction:column;
+}
+
+.imagem {
+    border: 3px solid black;
+    position: relative;
+    width: 195px;
+    height: 195px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 20px 75px;
+    box-shadow: 15px 5px 20px rgb(16, 1, 110);
+}
+
+.saudacao {
+  opacity: 0;
+  transition: opacity 2s ease;
+}
+
+.fadeIn {
+    opacity: 1;
+  }
+
+#mensagemSaudacao {
+    margin: 20px 8px;
+    background-color: rgb(176, 243, 243);
+    padding: 15px;
+    text-align: justify;
+}
+
+.imagem {
+    /* Duração do Zoom em segundos: */
+    transition: transform 1.2s;
+}
+
+.imagem:hover {
+    transform: scale(1.2);
+}
+
+.nome-completo {
+    padding: 10px;
+}
+
+.balao-mensagem {
+    display: none;
+    position: absolute;
+    top: 120px;
+    left: 22%;
+    transform: translateX(-50%);
+    background-color: #403e45;
+    color: #f9f4f4;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+.elemento-com-balao:hover .balao-mensagem {
+    display: block;
+}
+  
+

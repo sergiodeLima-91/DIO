@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quem Eu Sou</title>
+
+    <link rel="stylesheet" href="./src/styles/main.css">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+
+</head>
+<body>
+    <div class="container-avatar">
+
+        <span>
+            <h1 class="nome-completo">Sérgio dos Santos Lima</h1>
+        </span> 
+
+        <span>
+            <img class="imagem" src="./src/assets/images/sergio-3.jpg" alt="Nome" onclick="mostrarSaudacao()" onmouseover="exibirMensagemPequena()" onmouseout="ocultarMensagemPequena()">
+            
+            <span id="balaoMensagem" class="balao-mensagem">Este sou eu</span>
+
+        </span>
+        
+
+    </div>
+
+    <div id="mensagemSaudacao" class="saudacao"></div>
+
+    <div>
+        <span> Minhas Redes Sociais:</span>
+    </div>
+
+  
+  <script src="./src/scripts/engine.js" defer></script>
+</body>
+</html>
+
