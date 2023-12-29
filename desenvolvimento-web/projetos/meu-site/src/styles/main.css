@@ -1,26 +1,27 @@
 body {
     justify-content: center;
+    width: 1200px;
+    margin: auto;
+    align-items: center;
+    background-color: antiquewhite;
 }
 
-.container-avatar {
-    background-image: url('../assets/images/code.png');
-    filter: blur(0.9px);
-    box-shadow: -5px 10px 25px black;
-    border-radius: 5px;
-    border-bottom: ridge;
-    align-items: center;
-    flex-direction:column;
+#bg-code {
+    margin-top: 15px;
+    width: 1200px;
+    height: 200px;
+    box-shadow: -5px 6px 15px black;
+    border-radius: 5px ;
 }
 
 .imagem {
-    border: 3px solid black;
     position: relative;
     width: 195px;
     height: 195px;
     border-radius: 50%;
     cursor: pointer;
-    margin: 20px 75px;
-    box-shadow: 15px 5px 20px rgb(16, 1, 110);
+    margin: 20px 5px;
+    box-shadow: 15px 5px 20px rgb(2, 1, 12);
 }
 
 .saudacao {
@@ -48,8 +49,12 @@ body {
     transform: scale(1.2);
 }
 
-.nome-completo {
-    padding: 10px;
+#nome-completo h1{
+    border-radius: 5px;
+    width: 28.2rem;
+    margin-left: 20px;
+    margin-top: 25px;
+
 }
 
 .balao-mensagem {
@@ -68,5 +73,14 @@ body {
 .elemento-com-balao:hover .balao-mensagem {
     display: block;
 }
-  
+
+/* Para remover as marcadores do lado dos elementos da lista */
+.contacts-list li{
+    list-style-type: none;
+}
+
+/* Para remover qualquer marca de formatação (ex: sublinhados) que houver no texto */
+.contacts-list li a {
+    text-decoration: none;
+}
 

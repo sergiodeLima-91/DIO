@@ -11,7 +11,7 @@ var timeoutId;
     timeoutId = setTimeout(function(){
     var balaoMensagem = document.getElementById("balaoMensagem");
     balaoMensagem.style.display = "block";
-    }, 1500);
+    }, 100);
     
   }
 

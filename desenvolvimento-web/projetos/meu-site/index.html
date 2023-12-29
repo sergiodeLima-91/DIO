@@ -8,27 +8,56 @@
 
 </head>
 <body>
+
     <div class="container-avatar">
 
-        <span>
-            <h1 class="nome-completo">Sérgio dos Santos Lima</h1>
-        </span> 
-
-        <span>
+         <span>
             <img class="imagem" src="./src/assets/images/sergio-3.jpg" alt="Nome" onclick="mostrarSaudacao()" onmouseover="exibirMensagemPequena()" onmouseout="ocultarMensagemPequena()">
-            
-            <span id="balaoMensagem" class="balao-mensagem">Este sou eu</span>
+
+              <span id="balaoMensagem" class="balao-mensagem">
+                Clique na imagem para saber mais!
+            </span>
 
         </span>
         
 
     </div>
 
+    <div id="nome-completo">
+        <h1>Sérgio dos Santos Lima</h1>
+    </div>
+    
+    <div>
+        <img id="bg-code" src="../meu-site/src/assets/images/code-2.jpeg" alt="Background Codigos">
+    </div>
+
     <div id="mensagemSaudacao" class="saudacao"></div>
 
     <div>
-        <span> Minhas Redes Sociais:</span>
+        <span>Quer entrar em contato comigo?:</span>
     </div>
+
+    <br>
+
+    <footer>
+        <ul class="contacts-list">
+            <li id="linkedin">
+                
+                <a href= "https://www.linkedin.com/in/s%C3%A9rgio-lima-90a818214/" target="_blank">LinkedIn</a>
+                
+            </li>
+            <li id="email">
+
+                <a href= "mailto:sergiodelima22@gmail.com.br" target="_blank">Email</a>
+
+            </li>
+            <li id="github">
+
+                <a href= "https://github.com/sergiodeLima-91" target="_blank">Github</a>
+
+            </li>
+        </ul>
+    </footer>
 
   
   <script src="./src/scripts/engine.js" defer></script>
