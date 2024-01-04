@@ -1,4 +1,6 @@
-## Async e Wayt
+# Assincronidade
+
+## **Promises, Async e Wayt**
 <br>
 
  > Assíncrono x Síncrono:
@@ -55,3 +57,43 @@
 <br>
 
 ![](./imagens/imagem-04.png)
+
+<br>
+
+# Consumindo API
+
+## **APIs e Fetch**
+<br>
+
+> API:
+- Appplication Programmiing Interface
+- Forma de intermediar os resultados do back-end com o que é apresentado no front-end
+- Acessada por URLs
+- Formato .JSON (JavaScript Object Notation)
+
+<br>
+
+> Método Fetch:
+<br>
+
+![](./imagens/imagem-05.png)
+
+- Possível fazer operações:
+  - Post
+  - Get
+  - Put
+  - Delete
+  - etc
+
+- **O FETCH retorna uma promisse e por isso precisa ser usado com o AWAIT**
+
+<br>
+
+# Atividade: API "catAPI"
+
+Nesta atividade, vamos criar uma página que carrega fotos aleatórias de gatinhos sempre que clicamos em um botão.
+
+1- Utilize a [API](https://thatcopy.pw/catapi/rest) para fazer as chamadas com o método **fetch()**;
+<br>
+
+2 - Utilize seus conhecimentos na manipulação do DOM para criar a imagem e ativar o evento de clique do botão!
