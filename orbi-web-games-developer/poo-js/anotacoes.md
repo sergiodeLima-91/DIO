@@ -51,5 +51,8 @@
 
 *JavaScript tem um sistema de herança nativo a partir de protótipos* e ele não possui classes de forma nativa.
 
-- 
+- **CONSTRUCTOR:** Constrói a classe
+- **GET e SETTER:** 
+- **SUPER():**
+- **METHOD:**
 
