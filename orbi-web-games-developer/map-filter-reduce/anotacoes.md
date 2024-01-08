@@ -19,6 +19,12 @@
 
 <br>
 
+> Exemplo:
+
+` callback(valorNoIndice,IndiceDoArray, ArrayOriginalCompleto)` 
+
+<br>
+
 ## **FILTER:**
 <br>
 
@@ -27,6 +33,18 @@
   - Muito parecido com o método `map()`, mas está mais ligado resultados lógicos booleanos.
   - A callback é o predicado (termo lógico para dizer se algo é verdadeiro ou falso - [Fonte](https://pt.stackoverflow.com/questions/579915/qual-%C3%A9-o-significado-de-predicado-no-contexto-da-computa%C3%A7%C3%A3o))
 - **Documentação:** O método filter() cria um novo array com todos os elementos que passaram no teste implementado pela função fornecida ([Fonte](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)).
+
+<br>
+
+> Exemplo:
+
+` const frutas - ['maçã fuji', 'maçã verde','laranja','abacaxi'];`
+
+`frutas.filter((fruta) => frutas.includes('maçãs'));`
+
+<br>
+
+Retornará todo o valor que conter a palavra 'maçã' em sua composição.
 
 <br>
 
@@ -40,11 +58,11 @@
 
 <br>
 
-## ❓ **Map e Reduce: Quais as Principais Diferenças?**
+## ❓ **Map e Filter: Quais as Principais Diferenças?**
 
 <br>
 
-|Map | Reduce|
+|Map | Filter|
 -----|-------|
 **Transforma** elementos de um array de acordo com determinado método| **Avalia logicamente** os elementos do array
 Retorna uma nova lista com **todos os elementos transformados**| Retorna uma nova lista **somente com os elementos que atendem a determinada condição estabelecida no predicado**
@@ -57,3 +75,14 @@ Retorna uma nova lista com **todos os elementos transformados**| Retorna uma nov
 
 **Fonte:** ChatGTP
 
+<br>
+
+## ❓ **Map e ForEach: Qual a Diferença?**
+
+<br>
+
+|Map|ForEach|
+----|--------
+Retorna um novo **array**| Retorna *undefined*
+
+Portanto, a diferença básica está no retorno que cada um desses métodos disponibiliza. Para usar o resultado da operação feita pelo `forEach()` faz-se necessário executar este método dentro de uma constante
